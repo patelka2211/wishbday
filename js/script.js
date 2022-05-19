@@ -21,7 +21,7 @@ if (search_param.has("to")) {
 
 let wish_text = document.getElementById("wish_text");
 
-fetch("./wishbday/js/wishes.json")
+fetch("wishbday/js/wishes.json")
     .then((response) => response.json())
     .then((wishes) => {
         wish_type = choose(Object.keys(wishes));
@@ -44,7 +44,7 @@ set_repeated_data(
     "content",
     document.getElementById("hpbd").innerText
 );
-set_repeated_data("opengraph_image", "content", "./wishbday/assets/opengraph.jpg");
+set_repeated_data("opengraph_image", "content", "wishbday/assets/opengraph.jpg");
 set_repeated_data("this_url", "content", window.location.origin);
 
 document.getElementById('year').innerText = new Date().getFullYear();
