@@ -23,7 +23,7 @@
             justify-content: space-around;
             .animation {
                 position: absolute;
-                height: 100vh;
+                height: 92vh;
                 #ltp {
                     width: 100%;
                 }
@@ -47,6 +47,7 @@
         .credits {
             display: flex;
             height: 8vh;
+            text-align: center;
             font-size: 0.8rem;
             align-items: center;
             justify-content: space-around;
@@ -60,6 +61,10 @@
                     &:hover {
                         cursor: pointer;
                     }
+                }
+                .cprt {
+                    font-size: 0.6rem;
+                    margin-top: 2px;
                 }
             }
         }

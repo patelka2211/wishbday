@@ -45,7 +45,7 @@
 
 .container .main .content .animation {
   position: absolute;
-  height: 100vh;
+  height: 92vh;
 }
 
 .container .main .content .animation #ltp {
@@ -75,6 +75,7 @@
   display: -ms-flexbox;
   display: flex;
   height: 8vh;
+  text-align: center;
   font-size: 0.8rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -96,5 +97,10 @@
 
 .container .main .credits .text .link:hover {
   cursor: pointer;
+}
+
+.container .main .credits .text .cprt {
+  font-size: 0.6rem;
+  margin-top: 2px;
 }
 /*# sourceMappingURL=style.css.map */
