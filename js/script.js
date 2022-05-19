@@ -44,7 +44,14 @@ set_repeated_data(
     "content",
     document.getElementById("hpbd").innerText
 );
-set_repeated_data("opengraph_image", "content", "assets/opengraph.jpg");
+
+let root = window.location;
+
+set_repeated_data(
+    "opengraph_image",
+    "content",
+    root.origin + root.pathname + "assets/opengraph.jpg"
+);
 set_repeated_data("this_url", "content", window.location.origin);
 
-document.getElementById('year').innerText = new Date().getFullYear();
+document.getElementById("year").innerText = new Date().getFullYear();
