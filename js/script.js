@@ -5,13 +5,6 @@ function choose(choices) {
     return choices[index];
 }
 
-function set_repeated_data(class_name, attribute, value) {
-    const selected_tags = document.querySelectorAll(`.${class_name}`);
-    selected_tags.forEach((tag) => {
-        tag[attribute] = `${value}`;
-    });
-}
-
 const search_param = new URLSearchParams(window.location.search);
 
 if (search_param.has("to")) {
@@ -29,29 +22,8 @@ fetch("js/wishes.json")
         wish_text.innerText = random_wish;
     });
 
-set_repeated_data(
-    "document_title",
-    "innerText",
-    document.getElementById("hpbd").innerText
-);
-set_repeated_data(
-    "title",
-    "content",
-    document.getElementById("hpbd").innerText
-);
-set_repeated_data(
-    "description",
-    "content",
-    document.getElementById("hpbd").innerText
-);
+document.title = document.getElementById("hpbd").innerText;
 
 let root = window.location;
-
-set_repeated_data(
-    "opengraph_image",
-    "content",
-    root.origin + root.pathname + "assets/opengraph.jpg"
-);
-set_repeated_data("this_url", "content", window.location.origin);
 
 document.getElementById("year").innerText = new Date().getFullYear();
