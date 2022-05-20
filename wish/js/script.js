@@ -14,7 +14,7 @@ if (search_param.has("to")) {
 
 let wish_text = document.getElementById("wish_text");
 
-fetch("wish/js/wishes.json")
+fetch("js/wishes.json")
     .then((response) => response.json())
     .then((wishes) => {
         wish_type = choose(Object.keys(wishes));
