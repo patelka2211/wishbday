@@ -5,6 +5,36 @@
   font-family: 'Rubik', Arial, Helvetica, sans-serif;
 }
 
+@-webkit-keyframes moving_gradients {
+  0% {
+    background-position: 0%;
+  }
+  25% {
+    background-position: 100%;
+  }
+  50% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: 0%;
+  }
+}
+
+@keyframes moving_gradients {
+  0% {
+    background-position: 0%;
+  }
+  25% {
+    background-position: 100%;
+  }
+  50% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: 0%;
+  }
+}
+
 .container {
   width: 100%;
   display: -webkit-box;
@@ -23,12 +53,12 @@
 
 .container .main {
   width: 100%;
-  max-width: 921.600px;
+  max-width: 922px;
 }
 
 .container .main .content {
   width: 100%;
-  height: 92vh;
+  height: 90vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -45,7 +75,7 @@
 
 .container .main .content .animation {
   position: absolute;
-  height: 92vh;
+  height: 90vh;
 }
 
 .container .main .content .animation #ltp {
@@ -65,16 +95,20 @@
 }
 
 .container .main .content .wish #hpbd {
-  background: linear-gradient(70deg, #db469f 0%, #2188ff 100%);
+  background-image: linear-gradient(75deg, #405DE6, #5B51D8, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background-size: 161.8%;
+  background-position: 0%;
+  color: transparent;
+  -webkit-animation: moving_gradients 4s infinite;
+          animation: moving_gradients 4s infinite;
 }
 
 .container .main .credits {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 8vh;
+  height: 10vh;
   text-align: center;
   font-size: 0.8rem;
   -webkit-box-align: center;
@@ -90,9 +124,13 @@
 
 .container .main .credits .text .link {
   text-decoration: none;
-  background: linear-gradient(70deg, #db469f 0%, #2188ff 100%);
+  background-image: linear-gradient(75deg, #405DE6, #5B51D8, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background-size: 161.8%;
+  background-position: 0%;
+  color: transparent;
+  -webkit-animation: moving_gradients 4s infinite;
+          animation: moving_gradients 4s infinite;
 }
 
 .container .main .credits .text .link:hover {
