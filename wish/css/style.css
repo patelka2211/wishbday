@@ -95,7 +95,7 @@
 }
 
 .container .main .content .wish #hpbd {
-  background-image: linear-gradient(75deg, #405DE6, #5B51D8, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737);
+  background-image: linear-gradient(84deg, #0088FF -28.62%, #A033FF 36.39%, #FF5C87 98.74%);
   -webkit-background-clip: text;
   background-size: 161.8%;
   background-position: 0%;
@@ -123,8 +123,7 @@
 }
 
 .container .main .credits .text .link {
-  text-decoration: none;
-  background-image: linear-gradient(75deg, #405DE6, #5B51D8, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737);
+  background-image: linear-gradient(84deg, #0088FF -28.62%, #A033FF 36.39%, #FF5C87 98.74%);
   -webkit-background-clip: text;
   background-size: 161.8%;
   background-position: 0%;
