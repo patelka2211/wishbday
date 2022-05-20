@@ -24,6 +24,4 @@ fetch("js/wishes.json")
 
 document.title = document.getElementById("hpbd").innerText;
 
-let root = window.location;
-
 document.getElementById("year").innerText = new Date().getFullYear();
